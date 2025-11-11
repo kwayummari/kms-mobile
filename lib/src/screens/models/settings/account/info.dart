@@ -17,11 +17,11 @@ class info extends StatefulWidget {
 class _infoState extends State<info> {
   List data = [];
   void fetchData() async {
-    profileService ProfileService = profileService();
+    ProfileService profileService = ProfileService();
     final SharedPreferences sharedPreferences =
         await SharedPreferences.getInstance();
     var id = sharedPreferences.getString('id');
-    final datas = await ProfileService.profile(context, id!);
+    final datas = await profileService.profile(context, id!);
     setState(() {
       data = datas['user'];
     });

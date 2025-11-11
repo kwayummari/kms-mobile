@@ -3,6 +3,7 @@ import 'package:kms/src/utils/app_const.dart';
 import 'package:kms/src/widgets/app_container.dart';
 import 'package:kms/src/widgets/app_material.dart';
 import 'package:kms/src/widgets/app_text.dart';
+import 'package:kms/src/widgets/loanCalculatorDialog.dart';
 
 class LoanCards extends StatefulWidget {
   const LoanCards({super.key});
@@ -12,6 +13,15 @@ class LoanCards extends StatefulWidget {
 }
 
 class _LoanCardsState extends State<LoanCards> {
+  void _showLoanCalculator() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const LoanCalculatorPage(),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,7 +47,7 @@ class _LoanCardsState extends State<LoanCards> {
                             child: Row(
                               children: [
                                 IconButton(
-                                    onPressed: () {},
+                                    onPressed: () => _showLoanCalculator(),
                                     icon: Icon(Icons.calculate)),
                                 IconButton(
                                     onPressed: () {},

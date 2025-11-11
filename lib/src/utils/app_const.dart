@@ -3,14 +3,21 @@ import 'package:hexcolor/hexcolor.dart';
 
 abstract class AppConst {
   static Gradient primaryGradient = LinearGradient(
-    colors: [HexColor('#150572'), HexColor('#2eb2be')],
-    begin: Alignment.bottomCenter,
-    end: Alignment.topRight,
+    colors: [HexColor('#39b5fb'), HexColor('#000000')],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
   );
-  static Color primary = HexColor('#150572');
+  static Gradient splashGradient = LinearGradient(
+    colors: [HexColor('#39b5fb'), HexColor('#000000'), HexColor('#39b5fb')],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    stops: [0.0, 0.5, 1.0],
+  );
+  static Color primary = HexColor('#39b5fb');
+  static Color secondary = HexColor('#000000');
   static Color red = Colors.red;
   static Color green = Colors.green;
-  static Color brightWhite = HexColor('#2eb2be');
+  static Color brightWhite = HexColor('#39b5fb');
   static Color white = HexColor('#ffffff');
   static Color black = HexColor('#000000');
   static Color grey = Colors.grey;

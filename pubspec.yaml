@@ -2,7 +2,7 @@ name: kms
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.4 <4.0.0'
+  sdk: ">=3.3.4 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,27 +31,27 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   responsive_framework: ^0.2.0
-  shared_preferences: ^2.0.15
+  shared_preferences: ^2.5.3
   flutter_spinkit: ^5.1.0
-  flutter_native_splash: ^2.2.10+1
-  fluttertoast: ^8.0.9
+  flutter_native_splash: ^2.4.6
+  fluttertoast: ^8.2.12
   hexcolor: ^3.0.1
-  share_plus: ^6.3.0
-  flutter_launcher_icons: ^0.11.0
+  share_plus: ^11.1.0
+  flutter_launcher_icons: ^0.14.4
   url_launcher: ^6.1.7
-  connectivity: ^3.0.6
+  connectivity_plus: ^6.0.5
   provider: ^6.0.5
   flutter_dotenv: ^5.0.2
   intro_slider: ^4.2.0
   http: ^1.2.0
-  flutter_typeahead: ^4.3.8
+  flutter_typeahead: ^5.2.0
   intl: ^0.18.1
   carousel_slider: ^4.2.1
+  flutter_keyboard_visibility: ^6.0.0
 
 flutter_icons:
   android: "launcher_icon"
@@ -83,7 +83,6 @@ flutter_native_splash:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -106,13 +105,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-        -   family: OpenSans
-            fonts:
-                -   asset: assets/fonts/OpenSans-VariableFont.ttf
-                -   asset: assets/fonts/OpenSans-Italic-VariableFont.ttf
-                -   asset: assets/fonts/OpenSans-ExtraBold.ttf
-                -   asset: assets/fonts/OpenSans-Bold.ttf
-                -   asset: assets/fonts/OpenSans-SemiBold.ttf
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-VariableFont.ttf
+        - asset: assets/fonts/OpenSans-Italic-VariableFont.ttf
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

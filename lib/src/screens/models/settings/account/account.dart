@@ -25,13 +25,13 @@ class _accountState extends State<account> {
   }
 
   Future<String> getName() async {
-    profileService ProfileService = profileService();
+    ProfileService profileService = ProfileService();
     final SharedPreferences sharedPreferences =
         await SharedPreferences.getInstance();
     var name = sharedPreferences.getString('fullname');
     var role = sharedPreferences.getString('rolesName');
     var id = sharedPreferences.getString('id');
-    final datas = await ProfileService.profile(context, id!);
+    final datas = await profileService.profile(context, id!);
     setState(() {
       fullname = name.toString();
       roles = role.toString();

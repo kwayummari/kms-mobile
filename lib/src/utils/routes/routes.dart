@@ -13,15 +13,15 @@ import 'package:kms/src/screens/authentication/registration.dart';
 import 'package:kms/src/screens/splash/splash.dart';
 
 final Map<String, WidgetBuilder> routes = {
-  RouteNames.login: (context) => Login(),
-  RouteNames.registration: (context) => Registration(),
-  RouteNames.splash: (context) => Splash(),
-  RouteNames.dashboard: (context) => Dashboard(),
-  RouteNames.profile: (context) => profile(),
-  RouteNames.bottomNavigationBar: (context) => bottomNavigation(),
-  RouteNames.loanApplication: (context) => LoanApplication(),
-  RouteNames.user: (context) => UserList(),
-  RouteNames.loan: (context) => AllLoans(),
-  RouteNames.savings: (context) => AllSavings(),
-  RouteNames.shares: (context) => AllShares(),
+  RouteNames.login: (context) => const Login(),
+  RouteNames.registration: (context) => const Registration(),
+  RouteNames.splash: (context) => const Splash(),
+  RouteNames.dashboard: (context) => const Dashboard(),
+  RouteNames.profile: (context) => const Profile(),
+  RouteNames.bottomNavigationBar: (context) => const BottomNavigation(),
+  RouteNames.loanApplication: (context) => const LoanApplication(),
+  RouteNames.user: (context) => const UserList(),
+  RouteNames.loan: (context) => const AllLoans(),
+  RouteNames.savings: (context) => const AllSavings(),
+  RouteNames.shares: (context) => const AllShares(),
 };
