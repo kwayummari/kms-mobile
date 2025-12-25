@@ -1,0 +1,27 @@
+# Release Keystore Configuration
+# Copy this file to key.properties and fill in your actual values
+# DO NOT commit key.properties to version control!
+
+# Path to your release keystore file (relative to android/ directory)
+storeFile=release.keystore
+
+# Keystore password
+storePassword=your_keystore_password
+
+# Key alias name
+keyAlias=release
+
+# Key password
+keyPassword=your_key_password
+
+# Instructions to generate release keystore:
+# 1. Run: keytool -genkey -v -keystore android/release.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000
+# 2. Fill in the required information
+# 3. Copy this file to key.properties and update the values above
+# 4. Make sure release.keystore is in the android/ directory
+# 5. Add key.properties and release.keystore to .gitignore
+
+
+
+
+
